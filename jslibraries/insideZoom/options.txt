@@ -1,0 +1,10 @@
+  insideZoom.init({
+        el: document.querySelector('#image'),
+        zoomScale: 2.5
+    })
+
+//HTML
+<div id="image"
+     style='height: 300px;width: 300px;background-repeat: no-repeat;background-size:100%;background-image: url({{asset("images/112145268.jpg")}})'></div>
+<script src="{{asset('js/app.js')}}"></script>
+<script>

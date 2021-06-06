@@ -1,0 +1,20 @@
+  scrollSlider.init({
+            el:'#recommendScrollSlider',
+            listItemMargin:5,
+            listItemWidth:239,
+        })
+
+
+
+
+ <div id="recommendScrollSlider" class="scrollBox">
+                <button class="nextScrollSlider icon-angle-circled-left"></button>
+                <button disabled="disabled" class=" icon-angle-circled-right prevScrollSlider"></button>
+                <ul class="slider">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+</div>

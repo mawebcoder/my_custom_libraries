@@ -1,0 +1,24 @@
+﻿<img  id="image"  src="آدرس خود عکس"  data-zoom-image="آدرس عکس بزرگ">
+
+$('#image').elevateZoom({
+lensFadeIn:time, //زمان نمایش عکس یا سرعت ظاهر شدن عکس
+lensFadeOut:time //زمان مخفی شدن عکس
+scrollZoom:true,
+easing:true,
+easingAmount:true,
+lensFadeOut:true,
+lensFadeIn:true,
+borderSize:number,
+lensBorderColor:HEGZA,
+lensOpacity:number,
+cursour:"default" or "pointer",
+preloading:0 or 1 عکس تمام عمس ها را همان ابتدا لود کند یا صرفا وقتی رفت روش؟
+tint:true,
+tintOpacity:number,
+zoomWindowPosition:1 to 12,
+zoomWindowHeight:number,
+zoomWindowWidth:number
+
+});
+عکس اصلی باید کمی بزرگ باشد اما کیفیت کمتری داشته باشد تا حجم کمتری بگیرد این امر برای لنز این پلاگین است
+

@@ -1,0 +1,8 @@
+$(selector).mCustomScrollBar({
+scrollbarPosition:"inside"  or   "outSide",  //داخل عنصر قرار بگیره یا خارجش  
+autoHideScrollbar:true,  //از ناحیه خارج شد مخفی بشه
+theme:"dark"  or   "thick"  or   "light"  or  "dark-thick"   ,
+setHeight:false,
+setWidth:false,
+Axis:"y"   or    "x",
+});

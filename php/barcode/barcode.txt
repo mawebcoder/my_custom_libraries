@@ -1,0 +1,5 @@
+use Milon\Barcode\DNS1D;
+
+$barcode=new DNS1D();
+
+echo '<img src="data:image/png;base64,' . $barcode->getBarcodePNG('4', 'C128',width,height) . '" alt="barcode"   />';

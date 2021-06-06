@@ -1,0 +1,15 @@
+<div id="countdown"></div>
+
+  $('#countdown').countdown({
+        year: 2020,// YYYY Format
+        month: 4,// 1-12
+        day: 11,// 1-31
+        hour: 23,// 24 hour format 0-23
+        minute: 0,// 0-59
+        second: 0,// 0-59,
+        // timezone: 3.3,تایم زون ایران
+        onfinish:function () {
+            alert('mohammad');
+        }
+
+    });

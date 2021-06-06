@@ -1,0 +1,65 @@
+.selectBox {
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(52, 52, 51, 0.82);
+    position: relative;
+}
+
+.selectBox span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.selectBox .optionsBox {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    transition: .5s;
+    top: 100%;
+    right: 0;
+
+}
+
+.hiddenSlide {
+    height: 0;
+    overflow: hidden;
+}
+
+.showSlide {
+    min-height: 100px;
+}
+
+.selectBox .optionsBox .option {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1em;
+    color: rgba(52, 52, 51, 0.82);
+}
+
+.optionsBox input {
+    width: 100%;
+    height: 50px;
+    direction: rtl;
+    box-shadow: 0 0 10px rgba(88, 226, 183, 0.82);
+    position: relative;
+    top: 5px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 0 10px;
+
+}

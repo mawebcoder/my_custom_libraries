@@ -1,0 +1,13 @@
+    complixify.init({
+        input: document.querySelector('#input'),
+        textArea: document.querySelector('.text'),
+        passwordLength: 6
+    })
+
+//HTML
+
+<input id="input">
+
+<div class="text">
+
+</div>

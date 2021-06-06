@@ -1,0 +1,19 @@
+$('.owlCarousel').owlCarousel({
+margin:number,
+loop:number,
+items:number,
+responsive:{
+0:{items:number},
+576{items:number},
+768{items:number},
+992{items:number},
+},
+nav:true,
+navText:["بعدی","قبلی"],
+slideBy:number      //یعنی با هر بار زدن پند باز بره جلو 
+autoplay:true,
+autoplayTimeout:300,  //هر چند میلی ثانیه اتوماتیک اسلاید بشه
+autoplayHoverPause:true,
+dotes:true
+
+});

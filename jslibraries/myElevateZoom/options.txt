@@ -1,0 +1,18 @@
+    vanillaZoom.init({
+        //options
+        imageWindowHeight : 300
+        , element:'el'
+        , lensWidth : 150
+        , lensHeight : 150
+        , imageWindowWidth : 300,
+        imageZoomPosition :'left'
+    })
+
+//HTML
+
+<div id="el">
+
+<img src="address" data-zoom="address">
+
+
+</div>

@@ -1,0 +1,150 @@
+
+//neccesary comment for starting the swagger
+
+/**
+ * @OA\Info(
+ *      version="1.0.0",
+ *      title="hamejore routes documantions",
+ *      description="L5 Swagger OpenApi description",
+ * )
+ */
+
+
+----------------------------------------------------------------------------------------------
+//----------post method documantion without Api----------
+
+/**
+ * @OA\Post(
+ *   path="/pet/{petId}",
+ *   tags={"pet"},
+ *   summary="Updates a pet in the store with form data",
+ *   description="testing the post in swagger",
+ *   @OA\RequestBody(
+ *       required=false,
+ *       @OA\MediaType(
+ *           mediaType="application/x-www-form-urlencoded",
+ *           @OA\Schema(
+ *               type="object",
+ *               @OA\Property(
+ *                   property="name",
+ *                   description="Updated name of the pet",
+ *                   type="string"
+ *               ),
+ *               @OA\Property(
+ *                   property="status",
+ *                   description="Updated status of the pet",
+ *                   type="string"
+ *               ),
+ *           )
+ *       )
+ *   ),
+ *   @OA\Parameter(
+ *     name="petId",
+ *     in="path",
+ *     description="ID of pet that needs to be updated",
+ *     required=true,
+ *     @OA\Schema(
+ *         type="integer",
+ *         format="int64"
+ *     )
+ *   ),
+ *   @OA\Response(response="405",description="Invalid input"),
+ * )
+ */
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------
+
+//------------get method documantion without Api-----------------
+
+
+
+
+
+/**
+ * @OA\get(
+ *     path="/users/{id}",
+ *     summary="get users",
+ *     tags={"users"},
+ *     description="get users informations",
+ *     @OA\parameter(
+ *          name="id",
+ *          required=true,
+ *          in="path",
+ *          description="userId",
+ *              @OA\schema(
+ *                  type="integer",
+ *                         ),
+ *      ),
+ *       @OA\parameter(
+ *          name="family",
+ *          required=true,
+ *          in="query",
+ *          description="user family",
+ *              @OA\schema(
+ *                  type="string",
+ *                         ),
+ *       ),
+ *
+ *     @OA\Response(
+ *              response=200,
+ *              description="the success"
+ * ),
+ *     )
+ *
+ *
+ */
+
+
+
+//---------------------------------------------------------------------------------------------------------------
+
+//------------post method for fileUploading documantion without Api-----------------
+
+/**
+ * @OA\Post(
+ *     path="/pet/{petId}/uploadImage",
+ *     description="",
+ *     summary="uploads an image",
+ *     @OA\RequestBody(
+ *         required=true,
+ *         @OA\MediaType(
+ *             mediaType="multipart/form-data",
+ *             @OA\Schema(
+ *                 @OA\Property(
+ *                     description="Additional data to pass to server",
+ *                     property="additionalMetadata",
+ *                     type="string"
+ *                 ),
+ *                 @OA\Property(
+ *                     description="file to upload",
+ *                     property="file",
+ *                     type="string",
+ *                     format="file",
+ *                 ),
+ *                 required={"file"}
+ *             )
+ *         )
+ *     ),
+ *     @OA\Parameter(
+ *         description="ID of pet to update",
+ *         in="path",
+ *         name="petId",
+ *         required=true,
+ *         @OA\Schema(
+ *             type="integer",
+ *             format="int64"
+ *         ),
+ *     ),
+ *     @OA\Response(
+ *         response="200",
+ *         description="successful operation",
+ *     ),
+ * )
+ * */
+
+
+
+

@@ -1,0 +1,17 @@
+let span = document.querySelector('span');
+    span.addEventListener('click', function () {
+        let url = '{{route("download")}}';
+        let data = {};
+        axios.post('{{route('download')}}', data, {
+            responseType: 'blob',
+        }).then(function (response) {
+            let url = URL.createObjectURL(response.data);
+            let a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.download = 'Screenshot (2).png';
+        
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        })
+    })

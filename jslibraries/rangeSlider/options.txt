@@ -1,0 +1,63 @@
+﻿ 
+<div id='rangeSlider' dir='ltr'></div>
+
+با ید جهت عنصز محاط چپ به راست باشد	
+noUiSlider.create(el, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+        ,
+        direction: 'rtl',
+        // orientation: 'vertical',
+        tooltips: true,
+	step:20
+    });
+
+///single
+
+ noUiSlider.create(el, {
+        start: number,
+        connect: "lower",
+        range: {
+            'min': 0,
+            'max': 100
+        }
+        ,
+        direction: 'rtl',
+        // orientation: 'vertical',
+        tooltips: true,
+	step:20,
+    });
+
+
+example:
+
+
+        let ranges = document.querySelectorAll('.range').forEach(item => {
+            noUiSlider.create(item, {
+                start: 3,
+                connect: "lower",
+                range: {
+                    'min': 1,
+                    'max': 5
+                }
+                ,
+                direction: 'rtl',
+                // orientation: 'vertical',
+                tooltips: true,
+                step: 1,
+
+            });
+
+
+            item.noUiSlider.on('update', function (values) {
+
+                item.parentNode.querySelector('input').value = values[0];
+
+            });
+
+
+        })

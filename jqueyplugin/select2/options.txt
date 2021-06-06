@@ -1,0 +1,5 @@
+$(select).select2({
+ placeholder: {
+                text: 'کلیک کرده و انتخاب کنید'
+            },
+});

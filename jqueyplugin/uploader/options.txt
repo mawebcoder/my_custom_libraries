@@ -1,0 +1,8 @@
+$(#div).imageUploader({
+maxfiles:number,
+label:text,
+extensions:['.jpg',',png',',jpeg'],
+imageInputName:"image",
+});
+
+//نام پیشفرض برای input  در این پلاگین images[] است که با گزینه بالا تغییرش میتوانید بدهید

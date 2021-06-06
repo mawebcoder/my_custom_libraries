@@ -1,0 +1,119 @@
+.scrollBox {
+    background-color: rgba(255, 51, 46, 0.91);
+    height: 90%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+    button {
+        position: absolute;
+        z-index: 2;
+        border: 1px solid #eee;
+        background-color: #fff;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        font-size: 1.7em;
+        text-align: right;
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    button.nextScrollSlider {
+        left: 20px;
+        top: 45%;
+
+        &:hover {
+            left: 15px;
+        }
+    }
+
+    button.prevScrollSlider {
+        right: 20px;
+        top: 45%;
+
+        &:hover {
+            right: 15px;
+        }
+    }
+
+    ul.slider {
+        height: 100%;
+        padding: 10px 0;
+        transition: 1s;
+
+        > li {
+            float: right;
+            width: 239px;
+            height: 100%;
+            margin: 0 5px;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+
+            > a {
+                display: block;
+                height: 100%;
+                position: relative;
+
+                > .image-section {
+                    height: 70%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                p.titleSection {
+                    font-size: .8em;
+                    padding: 3px 4px;
+                }
+
+                span.discount {
+                    position: absolute;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    background-color: rgba(255, 51, 46, 0.91);
+                    color: #fff;
+                    text-align: center;
+                    top: 5px;
+                    left: 10px;
+                }
+
+                .price-section {
+                    height: 35px;
+                    margin-top: 5px;
+
+                    > div {
+                        text-align: center;
+                        line-height: 33px;
+                        font-size: .9em;
+                    }
+
+                    .old-price {
+                        color: rgba(47, 52, 47, 0.91);
+                        text-decoration: line-through;
+                    }
+
+                    .new-price {
+                        color: rgba(255, 51, 46, 0.91);
+                        font-weight: bold;
+                    }
+                }
+
+                .timer-section {
+                    height: 40px;
+                    position: relative;
+                    bottom: 18px;
+                }
+            }
+        }
+    }
+}

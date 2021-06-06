@@ -1,0 +1,12 @@
+    selectBox.init({
+        el: document.querySelector('#selectBox'),
+        search: true
+    })
+
+
+//HTML codes
+
+<select id="selectBox">
+
+<option></option>
+</select>

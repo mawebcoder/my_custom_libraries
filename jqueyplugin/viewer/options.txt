@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="dist/viewer.min.css">
+<script src="jquery.js"></script>
+<script src="dist/viewer.min.js"></script>
+<script src="dist/jquery-viewer.min.js"></script>
+
+$('#image).viewer({
+navbar:true,
+toolbar:true,
+});
+showing gallert style
+<ul id="img">
+<li><img src="images/videogames.jpg"></li>
+<li><img src="images/videogames.jpg"></li>
+<li><img src="images/videogames.jpg"></li>
+<li><img src="images/videogames.jpg"></li>
+</ul>
+$("#img").viewer()
+
+
